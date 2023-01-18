@@ -5,7 +5,7 @@ import styles from './styles';
 import Title from '../../../components/Title';
 import Input from '../../../components/Input';
 
-const SignUp = () => {
+const SignIn = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <Title>Welcome back</Title>
@@ -14,10 +14,16 @@ const SignUp = () => {
       <Button>Sign In</Button>
 
       <Text style={styles.footerText}>
-        Not registered?<Text style={styles.footerLink}> Sign up!</Text>
+        Not registered?
+        <Text
+          style={styles.footerLink}
+          onPress={() => navigation.navigate('SignUp')}>
+          {' '}
+          Sign up!
+        </Text>
       </Text>
     </SafeAreaView>
   );
 };
 
-export default memo(SignUp);
+export default memo(SignIn);
