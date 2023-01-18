@@ -1,6 +1,8 @@
 #import "AppDelegate.h"
 
+
 #import <React/RCTBundleURLProvider.h>
+#import <Firebase.h>
 
 @implementation AppDelegate
 
@@ -8,6 +10,7 @@
 {
   self.moduleName = @"justPlan";
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
+  [FIRApp configure];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

@@ -9,8 +9,8 @@ const SignIn = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <Title>Welcome back</Title>
-      <Input placeholder="Email" />
-      <Input placeholder="Password" />
+      <Input keyboardType="email-address" placeholder="Email" />
+      <Input secureTextEntry placeholder="Password" />
       <Button>Sign In</Button>
 
       <Text style={styles.footerText}>

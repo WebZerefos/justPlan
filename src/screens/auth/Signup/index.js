@@ -26,9 +26,9 @@ const SignUp = ({navigation}) => {
       <Title>Join the hub!</Title>
       <Input placeholder="First name" />
       <Input placeholder="Last name" />
-      <Input placeholder="Email" />
-      <Input placeholder="Password" />
-      <Input placeholder="Confirm Password" />
+      <Input keyboardType="email-address" placeholder="Email" />
+      <Input secureTextEntry placeholder="Password" />
+      <Input secureTextEntry placeholder="Confirm Password" />
 
       <View style={styles.row}>
         <CheckBox checked={agree} onPress={onAgreePress} />
