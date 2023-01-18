@@ -12,6 +12,10 @@ const SignUp = () => {
       <Input placeholder="Email" />
       <Input placeholder="Password" />
       <Button>Sign In</Button>
+
+      <Text style={styles.footerText}>
+        Not registered?<Text style={styles.footerLink}> Sign up!</Text>
+      </Text>
     </SafeAreaView>
   );
 };

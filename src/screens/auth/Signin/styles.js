@@ -6,6 +6,16 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 24,
   },
+
+  footerText: {
+    color: colors.grey,
+    textAlign: 'center',
+    marginTop: 28,
+  },
+  footerLink: {
+    color: colors.purple,
+    fontWeight: 'bold',
+  },
 });
 
 export default styles;
