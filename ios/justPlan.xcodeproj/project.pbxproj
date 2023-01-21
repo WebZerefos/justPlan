@@ -14,7 +14,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		353C94233B0B878A03A5DD95 /* Pods_justPlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89A8BF35A13BBC5F0293041 /* Pods_justPlan.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		92B2490029789FFB00647C40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92B248FF29789FFB00647C40 /* GoogleService-Info.plist */; };
+		92DAAC4D29796FC800B17538 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92DAAC4C29796FC800B17538 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		5B7EB9410499542E8C5724F5 /* Pods-justPlan-justPlanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-justPlan-justPlanTests.debug.xcconfig"; path = "Target Support Files/Pods-justPlan-justPlanTests/Pods-justPlan-justPlanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = justPlan/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-justPlan-justPlanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-justPlan-justPlanTests.release.xcconfig"; path = "Target Support Files/Pods-justPlan-justPlanTests/Pods-justPlan-justPlanTests.release.xcconfig"; sourceTree = "<group>"; };
-		92B248FF29789FFB00647C40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92DAAC4C29796FC800B17538 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A89A8BF35A13BBC5F0293041 /* Pods_justPlan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_justPlan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -118,7 +118,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				92B248FF29789FFB00647C40 /* GoogleService-Info.plist */,
+				92DAAC4C29796FC800B17538 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* justPlan */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* justPlanTests */,
@@ -248,7 +248,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				92B2490029789FFB00647C40 /* GoogleService-Info.plist in Resources */,
+				92DAAC4D29796FC800B17538 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

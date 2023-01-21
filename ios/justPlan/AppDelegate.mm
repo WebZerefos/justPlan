@@ -8,9 +8,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [FIRApp configure]; // deve ser colocado sempre como primeira optcao no didFinishLaunchingWithOptions
   self.moduleName = @"justPlan";
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
-  [FIRApp configure];
+  
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
