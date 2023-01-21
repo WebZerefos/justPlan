@@ -1,21 +1,21 @@
 /* eslint-disable react/react-in-jsx-scope */
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
+import colors from './src/constants/colors';
 
-import OnBoarding from './src/screens/auth/OnBoarding';
-import Signin from './src/screens/auth/Signin';
-import SignUp from './src/screens/auth/Signup';
+import Routes from './src/Routes';
 
-const Stack = createNativeStackNavigator();
+const Theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: colors.white,
+  },
+};
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="OnBoarding" component={OnBoarding} />
-        <Stack.Screen name="SignIn" component={Signin} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-      </Stack.Navigator>
+    <NavigationContainer theme={Theme}>
+      <Routes />
     </NavigationContainer>
   );
 };
