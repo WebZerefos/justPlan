@@ -8,6 +8,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginVertical: 24,
   },
+  thin: {
+    color: colors.purple,
+    fontSize: 28,
+    fontWeight: '200',
+    marginHorizontal: 30,
+  },
 });
 
 export default styles;

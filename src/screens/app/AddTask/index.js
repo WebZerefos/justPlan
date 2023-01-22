@@ -1,8 +1,14 @@
-import {Text, SafeAreaView, Pressable, Image} from 'react-native';
-import React, {memo} from 'react';
+import {Text, SafeAreaView, Pressable, Image, FlatList} from 'react-native';
+import React, {memo, useState} from 'react';
 import styles from './styles';
+import Title from '../../../components/Title';
+import Input from '../../../components/Input';
+import Categories from '../../../components/Categories';
+import {categories} from '../../../constants/categories';
 
 const AddTask = ({navigation}) => {
+  const [category, setCategory] = useState();
+
   const handleback = () => {
     navigation.goBack();
   };
@@ -15,7 +21,15 @@ const AddTask = ({navigation}) => {
           source={require('../../../assets/back.png')}
         />
       </Pressable>
-      <Text>AddTask</Text>
+      <Title type="thin">Add New Task</Title>
+      <Text style={styles.label}>Describe the task</Text>
+      <Input type="outline" placeholder="Type here..." />
+      <Text style={styles.label}>Type</Text>
+      <Categories
+        categories={categories}
+        selectedCategory={category}
+        onCategoryPress={setCategory}
+      />
     </SafeAreaView>
   );
 };

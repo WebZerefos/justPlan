@@ -3,11 +3,11 @@ import React, {memo} from 'react';
 import styles from './styles';
 import colors from '../../constants/colors';
 
-const Input = ({...props}) => {
+const Input = ({type, ...props}) => {
   return (
     <TextInput
       placeholderTextColor={colors.grey}
-      style={styles.input}
+      style={[styles.input, type === 'outline' ? styles.outline : {}]}
       {...props}
     />
   );

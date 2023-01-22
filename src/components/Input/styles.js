@@ -10,6 +10,16 @@ const styles = StyleSheet.create({
     color: colors.black,
     marginVertical: 12,
   },
+  outline: {
+    backgroundColor: colors.white,
+    marginHorizontal: 30,
+    paddingVertical: 15,
+    borderRadius: 10,
+    color: colors.black,
+    marginVertical: 12,
+    borderWidth: 1,
+    borderColor: colors.purple,
+  },
 });
 
 export default styles;
