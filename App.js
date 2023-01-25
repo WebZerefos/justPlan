@@ -1,7 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
-import colors from './src/constants/colors';
 
+import {Provider} from 'react-redux';
+import store from './src/store';
+
+import colors from './src/constants/colors';
 import Routes from './src/Routes';
 
 const Theme = {
@@ -14,9 +17,11 @@ const Theme = {
 
 const App = () => {
   return (
-    <NavigationContainer theme={Theme}>
-      <Routes />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer theme={Theme}>
+        <Routes />
+      </NavigationContainer>
+    </Provider>
   );
 };
 

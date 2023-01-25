@@ -5,9 +5,7 @@ const styles = StyleSheet.create({
   item: {
     fontSize: 14,
     color: colors.blue,
-    borderWidth: 1,
-    borderColor: colors.blue,
-    borderRadius: 8,
+
     padding: 8,
     paddingHorizontal: 12,
     textTransform: 'capitalize',
@@ -18,6 +16,9 @@ const styles = StyleSheet.create({
   itemContainer: {
     marginRight: 8,
     marginBottom: 14,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: colors.blue,
   },
   selectedItemContainer: {
     backgroundColor: colors.lightGrey,

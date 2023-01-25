@@ -12,6 +12,10 @@ const styles = StyleSheet.create({
   label: {
     marginHorizontal: 30,
     color: colors.purple,
+    marginTop: 12,
+  },
+  btn: {
+    margin: 30,
   },
 });
 

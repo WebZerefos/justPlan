@@ -2,21 +2,23 @@ import {StyleSheet} from 'react-native';
 import colors from '../../constants/colors';
 
 const styles = StyleSheet.create({
-  input: {
-    backgroundColor: colors.lightGrey,
-    paddingHorizontal: 12,
-    paddingVertical: 13,
-    borderRadius: 10,
-    color: colors.black,
-    marginVertical: 12,
-  },
   outline: {
     backgroundColor: colors.white,
     marginHorizontal: 30,
+    paddingVertical: 8,
     borderRadius: 10,
     color: colors.black,
     borderWidth: 1,
     borderColor: colors.purple,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 12,
+  },
+  icon: {
+    width: 32,
+    height: 32,
+    marginRight: 12,
+    marginLeft: 12,
   },
 });
 
